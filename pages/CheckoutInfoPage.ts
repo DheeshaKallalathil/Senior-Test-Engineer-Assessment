@@ -14,7 +14,7 @@ export class CheckoutInfoPage {
   }
 
   async continueToOverview() {
-    await this.page.click('.cart_button'); // "Continue" button
+    await this.page.click('.cart_button'); 
     await expect(this.page).toHaveURL(/.*checkout-step-two.html/);
   }
 }

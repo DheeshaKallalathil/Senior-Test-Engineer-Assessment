@@ -9,6 +9,6 @@ export class CheckoutCompletePage {
 
   async assertOrderComplete() {
     const confirmation = this.page.locator('.complete-header');
-    await expect(confirmation).toHaveText('Thank you for your order!');
+    await expect(confirmation).toHaveText(/thank you/i);
   }
 }

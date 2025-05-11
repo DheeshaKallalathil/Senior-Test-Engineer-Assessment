@@ -8,7 +8,7 @@ export class CheckoutOverviewPage {
   }
 
   async finishCheckout() {
-    await this.page.click('.cart_button'); // "Finish" button
+    await this.page.click('.cart_button');
     await expect(this.page).toHaveURL(/.*checkout-complete.html/);
   }
 }
