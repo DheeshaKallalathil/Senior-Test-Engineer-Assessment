@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@playwright/test": "^1.52.0",
+    "allure-playwright": "^3.2.1"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "allure:generate": "allure generate --clean",
+    "allure:open": "allure open"
+  }
+}
